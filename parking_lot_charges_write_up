@@ -1,0 +1,68 @@
+Michael Owusu
+Com Sci 161
+2/6/2013
+
+Supplementary Problem #1
+
+When running this program, the cases that were most important to me, as the developer, were the smooth calculation of prices regardless of the pay rate at that time and also how many minutes are involved. I wanted to make sure that my program gave the right numbers regardless of the minutes. To show that my program can effectively calculate the right price over multiple price ranges, some tests can be carried out.
+
+#1 To test that my program covers multiple pay rate time ranges a few times can be entered. I will enter a 9 am to 10 pm shift. If done correctly, my calculations say that it shoud cost 16$
+
+The output is:
+
+wilkins$ gcc -o parking_lot_charges parking_lot_charges.c
+wilkins$ ./parking_lot_charges
+This program calculates a parking fee for time spent parked in a parking lot.
+Start Hour: 9 am 
+End Hour: 10 pm 
+Total Time: 13.00 hours 
+Money charged for morning price: 0.00$
+Money charged for afternoon price: 6.00$
+Money charged for night price: 10.00$
+Total price: 16.00$ 
+
+From this data, you can see that my program agrees.
+
+#2 Another Instance
+Let's try 3am to 10 pm. My calculations say that the cost should be 22.50$.
+
+The output is:
+
+wilkins$ gcc -o parking_lot_charges parking_lot_charges.c
+wilkins$ ./parking_lot_charges
+This program calculates a parking fee for time spent parked in a parking lot.
+Start Hour: 3 am 
+End Hour: 10 pm 
+Total Time: 19.00 hours 
+Money charged for morning price: 5.00$
+Money charged for afternoon price: 7.50$
+Money charged for night price: 10.00$
+Total price: 22.50$ 
+
+From this data, you can see that my program agrees.
+
+You can keep testing various times, but, what these test have shown is that all the payrates and time periods are functional.
+
+Another thing that can be tested is whether or not the minutes calculate correctly into the final cost:
+
+#3 A test to try the minutes:
+Lets try 4:20pm to 7:30 pm. My calculations say that the cost should be 5.50$
+
+The output is:
+
+wilkins$ gcc -o parking_lot_charges parking_lot_charges.c
+wilkins$ ./parking_lot_charges
+This program calculates a parking fee for time spent parked in a parking lot.
+Start Hour: 4 pm 
+End Hour: 7 pm 
+Total Time: 3.17 hours 
+Money charged for morning price: 0.00$
+Money charged for afternoon price: 0.50$
+Money charged for night price: 5.00$
+Total price: 5.50$ 
+
+
+While you can consider multiple cases, these were the ones I had in mind during my programming and the ones I sought to satify in order to declare my code complete.
+
+
+
